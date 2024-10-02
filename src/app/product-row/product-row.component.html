@@ -1,0 +1,8 @@
+<div class="product-row" *ngIf="product">
+  <img [src]="product.imageUrl" alt="{{ product.name }}" />
+  <div class="assets-product">
+    <h3>{{ product.name }}</h3>
+    <p>Price: {{ product.price | currency }}</p>
+    <p>Department: {{ product.department.join(' > ') }}</p>
+  </div>
+</div>
